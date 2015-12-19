@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean id="square" class="com.anand.lect2.Square">
+<property name="pointA" ref="point1" />
+<property name="pointB" ref="point2" />
+<property name="pointC" ref="point3" />
+<property name="pointD" ref="point4" />
+</bean>
+
+<bean id="point1" class="com.anand.lect2.Points">
+<property name="x" value="0"/>
+<property name="y" value="0"/>
+</bean>
+
+<bean id="point2" class="com.anand.lect2.Points">
+<property name="x" value="0"/>
+<property name="y" value="1"/>
+</bean>
+
+<bean id="point3" class="com.anand.lect2.Points">
+<property name="x" value="1"/>
+<property name="y" value="0"/>
+</bean>
+
+<bean id="point4" class="com.anand.lect2.Points">
+<property name="x" value="1"/>
+<property name="y" value="1"/>
+</bean>
+
+</beans>
